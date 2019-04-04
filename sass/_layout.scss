@@ -30,10 +30,19 @@
     background: var(--color-grey-dark-1);
     // grow - shrink - basis(width of item)
     flex: 0 0 18%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 //right container
 .hotel-view {
+    //test
     background:red;
+    height: 80rem;
+
+
 
     // flex: 0 0 82%;
     flex: 1; //grow as much as it can
