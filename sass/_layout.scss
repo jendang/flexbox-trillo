@@ -8,9 +8,16 @@
 }
 
 .header {
+    font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
-    border-bottom: var(--color-grey-light-2)
+    border-bottom: var(--color-grey-light-2);
+
+    //using flexbox: container properties
+    display: flex;
+    //flex-direction: row; //default
+    justify-content: space-between;
+    align-items: center;
 }
 
 // flex container
@@ -26,7 +33,7 @@
 }
 //right container
 .hotel-view {
-    background: #fff;
+    background:red;
 
     // flex: 0 0 82%;
     flex: 1; //grow as much as it can
