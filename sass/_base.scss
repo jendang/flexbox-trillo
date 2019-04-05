@@ -17,6 +17,16 @@
     --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
 }
 
+//sass variable for media query
+//*** media query should use "em"
+$bp-largest: 75em; //1200px 1200/16
+$bp-large: 68.75em; //1100px/16
+$bp-medium: 56.25em; //900px/16
+$bp-small: 37.5em; //600px  /16
+$bp-smallest: 31.25em; //500px/16
+$bp-phone: 25em; //400px/16
+
+
 // Define global setting
 * {
     margin: 0;
@@ -32,6 +42,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; //1rem =10px, 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-large){
+        font-size: 50%; //1rem = 8px, 8/16 = 50%
+    }
 
 }
 
